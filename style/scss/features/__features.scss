@@ -1,0 +1,12 @@
+section.features {
+    h2 {
+        color: #4A4A4A;
+
+        &::after {
+            @include pseudo-border;
+            display: block;
+            background-color: #FFCA1D;
+            margin-top: 25px;
+        }
+    }
+}

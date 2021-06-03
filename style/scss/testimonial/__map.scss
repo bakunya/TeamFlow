@@ -1,0 +1,155 @@
+.map {
+    .main {
+        top: 20%;
+        height: 200px;
+        left: 35%;
+    }
+
+    img {
+        display: none;
+
+        &:nth-child(2){
+            display: initial;
+            top: 25%;
+            left: 39%;
+            height: 100px;
+
+            @include breakpoint(phone) {
+                height: 140px;
+            }
+
+            @include breakpoint(tablet) {
+                height: 150px;
+            }
+
+            @include breakpoint(laptop) {
+                height: 180px;
+            }
+
+            @include breakpoint(desktop) {
+                height: 210px;
+            }
+        }
+
+        &:nth-child(3) {
+            right: 14%;
+            top: 53%;
+            
+            
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 80px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 90px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 100px;
+            }
+        }
+
+        &:nth-child(4) {
+            left: 23%;
+            top: 54%;
+
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 70px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 80px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 90px;
+            }
+        }
+
+        &:nth-child(5) {
+            left: 25%;
+            top: 10%;
+
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 60px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 70px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 80px;
+            }
+        }
+
+        &:nth-child(6) {
+            right: 21%;
+            top: 13%;
+
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 60px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 70px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 80px;
+            }
+        }
+
+        &:nth-child(7) {
+            left: 34%;
+            bottom: 0;
+
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 60px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 70px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 80px;
+            }
+        }
+
+        &:nth-child(8) {
+            right: 28%;
+            bottom: 2%;
+
+            @include breakpoint(tablet) {
+                display: initial;
+                width: 60px;
+            }
+
+            @include breakpoint(laptop) {
+                display: initial;
+                width: 70px;
+            }
+
+            @include breakpoint(desktop) {
+                display: initial;
+                width: 80px;
+            }
+        }
+    }
+}

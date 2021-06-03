@@ -1,0 +1,9 @@
+.navigation {
+    h1 {
+        &::before{
+            @include pseudo-border;
+            background-color: #FFCA1D;
+            margin-bottom: 10px;
+        }
+    }
+}

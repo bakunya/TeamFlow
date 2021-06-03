@@ -1,0 +1,27 @@
+footer.footer {
+    display: grid;
+    width: 90vw;
+    align-items: flex-start;
+
+    @include breakpoint(tablet) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    @include breakpoint(laptop) {
+        grid-template-columns: 40% 14% 13% 18% 15%;
+        gap: 0;
+    }
+    @include breakpoint(desktop) {
+        grid-template-columns: 40% 14% 13% 18% 15%;
+        gap: 0;
+    }
+
+    div.section {
+        @include breakpoint(smalldeviceup) {
+            margin-top: 40px;
+        }
+        @include breakpoint(phoneup) {
+            margin-top: 40px;
+        }
+    }
+}

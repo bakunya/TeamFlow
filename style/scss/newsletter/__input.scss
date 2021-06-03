@@ -1,0 +1,25 @@
+.input {
+    width: fit-content;
+    border-radius: 20px;
+    width: -moz-fit-content;
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="email"] {
+        border: none;
+        outline: none;
+        width: 350px;
+
+        @include breakpoint(phoneup){
+            width: 100%;
+        }
+    }
+
+    button {
+        background-color: #686DF1;
+        color: white;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+section.integrate {
+    h2 {
+        &::after {
+            @include pseudo-border;
+            margin-top: 20px;
+            background-color: yellow;
+        }
+    }
+
+    .blue {
+        &::after {
+            background-color: #686DF1;
+        }
+    }
+
+
+}

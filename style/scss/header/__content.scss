@@ -1,0 +1,102 @@
+.content {
+    .position-relative {
+        z-index: 2;
+    }
+
+    h1 {
+        @include breakpoint(tablet) {
+            white-space: pre-line;
+        }
+
+        &::after {
+            @include pseudo-border;
+            background-color: #3ADAD9;
+            margin-top: .8em;
+        }
+    }
+
+    img {
+        height: 250px;
+        object-fit: contain;
+        object-position: center;
+        z-index: 0;
+        position: absolute;
+    }
+
+    .img-1 {
+        width: 250px;
+        top: 40%;
+        right: 0;
+
+        @include breakpoint(phone) {
+            width: 350px;
+            bottom: 190px !important;
+            top: initial;
+
+            @media (max-height: 650px) {
+                display: none;
+            }
+        }
+
+        @include breakpoint(tablet) {
+            width: 450px;
+            bottom: 140px !important;
+            top: initial;
+
+            @media (max-height: 650px) {
+                display: initial;
+                top: 100px;
+                height: 150px;
+            }
+        }
+
+        @include breakpoint(laptop) {
+            top: 100px;
+            right: 30px;
+            width: 500px;
+        }
+
+        @include breakpoint(desktop) {
+            width: 600px;
+            height: 350px;
+            top: 45px;
+        }
+    }
+
+    .img-2 {
+        width: 350px;
+        bottom: 0;
+        left: 0;
+
+        @include breakpoint(phone) {
+            width: 450px;
+        }
+
+        @include breakpoint(tablet) {
+            width: 350px;
+
+            @media (max-height: 650px) {
+                right: 0;
+            }
+        }
+
+        @include breakpoint(laptop) {
+            bottom: 0;
+            right: 200px;
+            left: initial;
+            width: 550px;
+            height: 350px;
+
+            @media (max-height: 650px) {
+                right: 0;
+                left: initial;
+            }
+        }
+
+        @include breakpoint(desktop) {
+            width: 650px;
+            height: 300px;
+            bottom: 0;
+        }
+    }
+}

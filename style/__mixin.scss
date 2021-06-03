@@ -1,0 +1,65 @@
+@mixin breakpoint($point) {
+    @if $point == desktop {
+        @media (min-width: 1280px) { @content; }
+    } @else if $point == laptop {
+        @media (min-width: 1024px) { @content; }
+    } @else if $point == laptopup {
+        @media (max-width: 1024px) { @content; }
+    } @else if $point == tablet {
+        @media (min-width: 768px) { @content; }
+    } @else if $point == tabletup {
+        @media (max-width: 768px) { @content; }
+    } @else if $point == phone {
+        @media (min-width: 640px) { @content; }
+    } @else if $point == phoneup {
+        @media (max-width: 640px) { @content; }
+    } @else if $point == smalldevice {
+        @media (min-width: 500px) { @content; }
+    } @else if $point == smalldeviceup {
+        @media (max-width: 500px) { @content; }
+    }
+}
+
+@mixin inset-position {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@mixin image-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin pseudo-border {
+    content: "";
+    width: 50px;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.width-fit-content {
+    width: fit-content !important;
+    width: -moz-fit-content !important;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
