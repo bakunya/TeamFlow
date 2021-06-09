@@ -1,5 +1,5 @@
 # TeamFlow
-Slicing from Andre Rio Design
+Slicing from [WibuCode Design Team](https://jasa.wibucode.com)
 
 ## Installation
 
